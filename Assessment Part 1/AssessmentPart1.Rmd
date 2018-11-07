@@ -2,7 +2,7 @@
 title: "Using ArcGIS and R to produce point density map"
 author: "Jiaxu Wu"
 date: "2018.11.1"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
