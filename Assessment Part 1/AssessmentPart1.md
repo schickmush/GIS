@@ -49,4 +49,4 @@ Point Density Map is a raster map reveals where points are clustered in a given 
 -   Use Point Density tool to get a raster layer. Remember to choose hotspots as the population field because it denotes population values for each point and set Extent and Mask as the London boundary shapefile in the Environment Settings.
 -   In the layer properties of raster layer, change the symbology method into Classified and choose classification method as Natural Breaks (Jenks). This classification method can maximize the differences between classes.
 
-![](D:/Documents/GitHub/GIS/Assessment%20Part%201/MAP_NatBrek.jpg)
+![image](https://raw.githubusercontent.com/schickmush/GIS/master/Assessment%20Part%201/MAP_NatBrek.jpg)
