@@ -85,7 +85,9 @@ Wifi.ppp <- ppp(x=WifiBNG@coords[,1],y=WifiBNG@coords[,2],window=window)
 plot(Wifi.ppp,pch=16,cex=0.5, main="London Wifi")
 ```
 
-![](AssessmentPart1_files/figure-markdown_github/unnamed-chunk-4-1.png) - produce a KDE (Kernel Density Estimation ) map from a ppp object using the density function.
+![](AssessmentPart1_files/figure-markdown_github/unnamed-chunk-4-1.png)
+
+-   produce a KDE (Kernel Density Estimation ) map from a ppp object using the density function.
 
 ``` r
 plot(density(Wifi.ppp,sigma = 2000,weights=),main = "London Wifi Density (2014)")
