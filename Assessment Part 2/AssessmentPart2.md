@@ -4,7 +4,7 @@ Assessment Part 2
 Spatial Analysis Methodologies
 -----------------------------------------------
 
-word account:
+word account: 599
 
 ### 1. Data Pre-processing
 
@@ -41,3 +41,11 @@ Use Select by Location Tool to select features from LondonWardsData which inters
 Right click the Male_lifeExpec_2009_13 and Female_lifeExpec_2009_13 fields and choose statistic. The result shows that the average life expectancy for male and female is 78.77 and 84.04.
 
 #### 2.6 Are there any spatial patterns for CASA Treasure Hunt locations or are they randomly distributed?
+
+The distribution of the points is shown below. 
+
+![](figure/3.png)
+
+The principle of nearest neighbour analysis is to calculate the mean distance between points and compare it with the distance under complete Spatial Randomness. Use Average Nearest Neighbour Tool to do the analysis and choose the distand method as Euclidean. The report shows that the ratio is 1.04 and the z-score is 0.59 (-1.96<z<1.96), which means the patterns does not appear to be significantly different than random.   
+
+![](figure/4.png)
