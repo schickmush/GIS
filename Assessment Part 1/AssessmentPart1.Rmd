@@ -12,8 +12,11 @@ always_allow_html: yes
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Assessment Part 1
+## Using ArcGIS and R to produce point density map
+word account: 593
 ### 1.	Data Source and Data Pre-processing ###
-The dataset used in this report is provided by the ESRC Consumer Data Research Centre. The csv files contain information about WiFi networks that are purposely made available to public members from June to July 2014 in London, comprising projection coordinates (easting and northing), geographic coordinates (latitude and longitude), number of public WiFi hotspots in one place and the postcode. Besides, the London boundary shapefile was downloaded from the UK Data Service. 
+The dataset used in this report is provided by the ESRC Consumer Data Research Centre. The csv files contain information about WiFi networks that are purposely made available to public members from June to July 2014 in London, comprising British National Grid projection coordinates (easting and northing), geographic coordinates (latitude and longitude), number of public WiFi hotspots in one place and the postcode. Besides, the London boundary shapefile was downloaded from the UK Data Service. 
 
 However, the csv files containing London WiFi data are separated by the Local Authority District, so the first thing we need to do is using R to combine them into one single csv file.
 
@@ -43,7 +46,7 @@ Point Density Map is a raster map reveals where points are clustered in a given 
 - 	Load the London boundary shapefile. Check the data source and find it uses British National Grid as the projection coordinate system. 
 -   Load csv file and use Display XY Data tool to draw points on map (Use projection coordinates as the XY field to fit with London boundary shapefile). Export it to a point shapefile. 
 -   Load basemap by ArcGIS Online
-- 	Use Point Density tool to get a raster layer. Remember to choose hotspots as the population field because it denotes population values for each point and set Extent and Mask as the London boundary shapefile in the Environment Settings. 
+- 	Use Point Density tool to get a raster layer. Remember to choose hotspots as the population field because it means the number of WiFi networks in one place, and then set Extent and Mask as the London boundary shapefile in the Environment Settings. 
 -   In the layer properties of raster layer, change the symbology method into Classified and choose classification method as Natural Breaks (Jenks). This classification method can maximize the differences between classes.
 
 ![image](https://raw.githubusercontent.com/schickmush/GIS/master/Assessment%20Part%201/MAP_NatBrek.jpg)
@@ -91,3 +94,17 @@ plot(density(Wifi.ppp,sigma = 2000,weights=),main = "London Wifi Density (2014)"
 ```
 
 ### 3. compare two maps
+ArcGIS is a GUI based software, which is easier for GIS beginners to learn and get familiar with the basic tools and cartographic skills, but this software is usually inflexible and slow, sometimes even crash before you save your project. As for R, the coding running fast and steady, and you can change the code flexible to suit any specific problems, which is a big advantage when doing a big project. However, although there exist many related professional packages, beginners still need much more time to learn and handle it. 
+
+When using the two softwares to do point density maps in this report, the two maps both show that the density of wifi networks is much higher in central London. But there exists a difference between two maps: ArcGIS can easily choose hotspots as the population field to identify one location has more than one wifi networks, but it has not found a solution for R to do this function.
+
+
+### Reference:
+Contains Ofcom Infrastructure Report data, 2014; 
+Contains Royal Mail data ?? Royal Mail copyright and database right 2015; 
+Contains National Statistics data ?? Crown copyright and database right 2015; 
+Contains Ordnance Survey data ?? Crown copyright and database right 2015; 
+Data provided by the ESRC Consumer Data Research Centre
+Data classification methods¡ªArcGIS Pro | ArcGIS Desktop 
+How Point Density works¡ªHelp | ArcGIS for Desktop 
+
