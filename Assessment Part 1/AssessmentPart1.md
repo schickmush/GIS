@@ -4,7 +4,11 @@ Assessment Part 1
 Using ArcGIS and R to produce point density map
 -----------------------------------------------
 
-word account: 593 \#\#\# 1. Data Source and Data Pre-processing \#\#\# The dataset used in this report is provided by the ESRC Consumer Data Research Centre. The csv files contain information about WiFi networks that are purposely made available to public members from June to July 2014 in London, comprising British National Grid projection coordinates (easting and northing), geographic coordinates (latitude and longitude), number of public WiFi hotspots in one place and the postcode. Besides, the London boundary shapefile was downloaded from the UK Data Service.
+word account: 593
+
+### 1. Data Source and Data Pre-processing
+
+The dataset used in this report is provided by the ESRC Consumer Data Research Centre. The csv files contain information about WiFi networks that are purposely made available to public members from June to July 2014 in London, comprising British National Grid projection coordinates (easting and northing), geographic coordinates (latitude and longitude), number of public WiFi hotspots in one place and the postcode. Besides, the London boundary shapefile was downloaded from the UK Data Service.
 
 However, the csv files containing London WiFi data are separated by the Local Authority District, so the first thing we need to do is using R to combine them into one single csv file.
 
@@ -107,4 +111,14 @@ When using the two softwares to do point density maps in this report, the two ma
 
 ### Reference:
 
-Contains Ofcom Infrastructure Report data, 2014; Contains Royal Mail data ?? Royal Mail copyright and database right 2015; Contains National Statistics data ?? Crown copyright and database right 2015; Contains Ordnance Survey data ?? Crown copyright and database right 2015; Data provided by the ESRC Consumer Data Research Centre Data classification methods—ArcGIS Pro | ArcGIS Desktop How Point Density works—Help | ArcGIS for Desktop
+Contains Ofcom Infrastructure Report data, 2014;
+
+Contains Royal Mail data @ Royal Mail copyright and database right 2015;
+
+Contains National Statistics data @ Crown copyright and database right 2015;
+
+Contains Ordnance Survey data @ Crown copyright and database right 2015;
+
+Data provided by the ESRC Consumer Data Research Centre
+
+Data classification methods—ArcGIS Pro | ArcGIS Desktop
