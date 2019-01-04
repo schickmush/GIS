@@ -4,7 +4,7 @@ Assessment Part 2
 Spatial Analysis Methodologies
 -----------------------------------------------
 
-word account: 599
+word count: 599
 
 ### 1. Data Pre-processing
 

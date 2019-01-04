@@ -4,7 +4,7 @@ Assessment Part 1
 Using ArcGIS and R to produce point density map
 -----------------------------------------------
 
-word account: 593
+word count: 593
 
 ### 1. Data Source and Data Pre-processing
 
